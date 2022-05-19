@@ -1,0 +1,209 @@
+    /*************** Start Statistics *******************/
+    
+    .statistics {
+        .section-content {
+            flex-wrap: wrap;
+        }
+        .result-item {
+            text-align: center;
+            min-width: 50%;
+            @media (min-width: 576px) {
+                min-width: 15%;
+            }
+            text.timer {
+                font-size: 20px;
+            }
+            circle.border {
+                stroke: #FBFBFC;
+            }
+            #solved-homework {
+                circle.circle {
+                    stroke: #4A3274;
+                    transform: rotate(-90, 100, 100);
+                }
+                text.timer {
+                    fill: #4A3274;
+                }
+            }
+            #attended-days {
+                circle.circle {
+                    stroke: #739500;
+                }
+                text.timer {
+                    fill: #739500;
+                }
+            }
+            #online-sessions {
+                circle.circle {
+                    stroke: #950086;
+                    color: #950086;
+                }
+                text.timer {
+                    fill: #950086;
+                }
+            }
+        }
+    }
+    /************** End Statistics **********************/
+    /********** Start attendence*******************/
+    
+    .attendence {
+        .fc-header-toolbar {
+            margin-top: -75px;
+            z-index: 11;
+        }
+        .fc-theme-standard .fc-scrollgrid {
+            border: 0;
+        }
+        .fc table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        .fc .fc-toolbar-title {
+            font-size: 1em;
+        }
+        .fc-toolbar-chunk>div {
+            display: flex;
+            align-items: center;
+            .fc-toolbar-title {
+                margin: 0 10px;
+            }
+            .fc-button {
+                width: 38px;
+                height: 38px;
+                background: #fff;
+                border: 0.5px solid #e8e8e8;
+                span {
+                    color: #026bb0;
+                }
+            }
+        }
+        .fc .fc-col-header-cell-cushion {
+            font-size: 14px;
+            color: #8b8b8b;
+            text-decoration: none;
+        }
+        .fc-theme-standard td,
+        .fc-theme-standard th {
+            border: 0;
+            border-radius: 5px;
+        }
+        .fc .fc-daygrid-day-top {
+            justify-content: center;
+            align-items: center;
+        }
+        .fc .fc-daygrid-day-frame {
+            display: flex;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                color: #333333;
+            }
+        }
+        .fc .fc-cell-shaded,
+        .fc .fc-day-disabled {
+            background: transparent;
+        }
+        .fc-daygrid-day {
+            background: rgba(120, 181, 23, 0.1);
+            &.fc-day-fri,
+            &.fc-day-sat {
+                background: rgba(51, 51, 51, 0.1);
+            }
+            &.fc-day-disabled {
+                background: transparent;
+            }
+        }
+        .fc .fc-bg-event {
+            opacity: 1;
+        }
+        .fc-event-title {
+            display: none;
+        }
+        .fc .fc-scroller-liquid-absolute {
+            overflow: hidden!important;
+        }
+        .fc .fc-button-primary:focus,
+        .fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+        .fc .fc-button-primary:not(:disabled):active:focus {
+            background: #f0f0f0;
+        }
+    }
+    /*************** End attendence **************************/
+    /************** Start gradebook ***************************/
+    
+    .gradebook {
+        .section-title {
+            h2 {
+                width: 25%;
+            }
+            p {
+                width: calc(75%/4);
+                text-align: center;
+                font-size: 18px;
+                font-family: "NotoSans-Regular";
+                color: #333333;
+                @media (max-width: 575.98px) {
+                    font-size: 13px;
+                }
+            }
+        }
+        .grade-table {
+            div {
+                width: calc(75%/4);
+                background-color: $white;
+                border-radius: 20px;
+                border: 1px solid #E9E9E9;
+                margin: 0 5px;
+                padding: 10px 15px;
+                text-align: center;
+                @media (max-width: 575.98px) {
+                    padding: 10px 10px;
+                    margin: 0 2px;
+                }
+                ul {
+                    li {
+                        font-size: 16px;
+                        font-family: "NotoSans-Regular";
+                        border-bottom: 1px solid #E9E9E9;
+                        color: #333333;
+                        padding: 15px 0;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        span {
+                            color: #FF0000;
+                        }
+                        @media (max-width: 575.98px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .material {
+                width: 25%;
+                text-align: left;
+                ul {
+                    li {
+                        font-family: "Noto Sans";
+                        font-size: 16px;
+                        font-weight: bold;
+                        @media (max-width: 575.98px) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .total {
+            p {
+                font-size: 20px;
+                color: #333333;
+                font-weight: bold;
+                span {
+                    color: #AFAFAF;
+                }
+            }
+        }
+    }
+    /************** End gradebook *****************************/

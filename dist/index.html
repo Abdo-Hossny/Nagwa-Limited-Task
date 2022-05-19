@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--- Start Header -->
+    <header>
+
+        <!--- Start Top-Header -->
+        <div class="top-header">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.svg">
+                        </a>
+                        <span>Step to Success school</span>
+
+                    </div>
+                    <div class="user">
+                        <ul>
+                            <li><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <text id="bell" transform="translate(1 14)" fill="#026bb0" font-size="16" font-family="FontAwesome6Free-Regular, 'Font Awesome \36  Free'"><tspan x="0" y="0">bell</tspan></text>
+                              </svg>
+                              </i></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      User
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">profile</a>
+                                        <a class="dropdown-item" href="#">settings</a>
+                                        <a class="dropdown-item" href="#">logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- End Top-Header -->
+        <!---- Start Childs-ctrl -->
+        <div class="childs-ctrl">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center flex-wrap">
+                    <!---- Start child-active-->
+                    <div class="child-active d-flex justify-content-start align-items-center">
+                        <div class="child-img">
+                            <img src="images/child1.png" alt="">
+                        </div>
+                        <div class="child-name">
+                            <h3>Adam</h3>
+                        </div>
+                    </div>
+                    <!---- End child-active-->
+                    <!---- Start childs-selector-->
+                    <div class="childs-selector">
+                        <ul class="d-flex justify-content-start align-items-center">
+                            <li class="d-flex justify-content-start align-items-center">
+                                <div class="child-img">
+                                    <img src="images/child2.png" alt="">
+                                </div>
+                                <div class="child-name">
+                                    <h3>Maged</h3>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center active">
+                                <div class="child-img">
+                                    <img src="images/child1.png" alt="">
+                                </div>
+                                <div class="child-name">
+                                    <h3>Adam</h3>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-start align-items-center">
+                                <div class="child-img">
+                                    <img src="images/Rectangle.png" alt="">
+                                </div>
+                                <div class="child-name">
+                                    <h3>Nabil</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---- End childs-selector-->
+                    <!---- Start add-child-->
+                    <div class="add-child">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="22" viewBox="0 0 98 22">
+  <text id="_Add_Child" data-name=" Add Child" transform="translate(49 17)" fill="#026bb0" font-size="16" font-family="FontAwesome5ProSolid, 'Font Awesome \35  Pro Solid'"><tspan x="-48.271" y="0"></tspan><tspan y="0" font-family="SegoeUI, Segoe UI"> </tspan><tspan y="0" font-family="NotoSans-Regular">Add Child</tspan></text>
+</svg>
+
+                        </button>
+                    </div>
+                    <!---- End add-child-->
+                </div>
+            </div>
+        </div>
+        <!---- End Childs-ctrl -->
+    </header>
+    <!--- End Header -->
+    <!--- Start statistics-->
+    <div class="statistics">
+        <div class="container">
+            <!--- Start section-title -->
+            <div class="section-title">
+                <h2>Statistics</h2>
+            </div>
+            <!--- End section-title -->
+            <!--- Start section-content-->
+            <div class="section-content d-flex justify-content-around">
+                <section class="result-item">
+                    <div id="solved-homework" class="example"></div>
+                    <h6>32 out of 40</h6>
+                    <p>Solved Homework</p>
+                </section>
+                <section class="result-item">
+                    <div id="attended-days" class="example"></div>
+                    <h6>45 out of 90</h6>
+                    <p>Attended Days</p>
+                </section>
+                <section class="result-item">
+                    <div id="online-sessions" class="example"></div>
+                    <h6>8 out of 11</h6>
+                    <p>Online Sessions attended</p>
+                </section>
+            </div>
+            <!--- End section-content-->
+        </div>
+    </div>
+    <!--- End statistics -->
+    <!--- Start Homework-->
+    <div class="homework">
+        <div class="container">
+            <!--- Start section-title -->
+            <div class="section-title">
+                <h2>Homework</h2>
+            </div>
+            <!--- End section-title -->
+            <!--- Start section-content-->
+            <div class="section-content">
+                <div id="container">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+            <!--- End section-content-->
+        </div>
+    </div>
+    <!--- End statistics -->
+    <!--- Start Attendence-->
+    <div class="attendence">
+        <div class="container">
+            <!--- Start section-title -->
+            <div class="section-title">
+                <h2>Attendence</h2>
+            </div>
+            <!--- End section-title -->
+            <!--- Start section-content-->
+            <div class="section-content">
+                <div id="calendar"></div>
+            </div>
+            <!--- End section-content-->
+        </div>
+    </div>
+    <!--- End Attendence -->
+    <!--- Start Gradebook-->
+    <div class="gradebook">
+        <div class="container">
+            <!--- Start section-title -->
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Gradebook</h2>
+                <p>1st Semester</p>
+                <p>2nd Semester</p>
+                <p>Year Pass Limit</p>
+                <p>Total Marks</p>
+            </div>
+            <!--- End section-title -->
+            <!--- Start section-content-->
+            <div class="grade-table mb-1 d-flex justify-content-between">
+                <div class="material">
+                    <ul>
+                        <li>Math</li>
+                        <li>Geology</li>
+                        <li>Sociology</li>
+                        <li>Chemistry</li>
+                        <li>Statics</li>
+                        <li>Science</li>
+                        <li>Arabic</li>
+                    </ul>
+                </div>
+                <div class="first-semester">
+                    <ul>
+                        <li>42/50</li>
+                        <li>80/100</li>
+                        <li>50/50</li>
+                        <li>98/100</li>
+                        <li><span>30</span>/100</li>
+                        <li><span>20</span>/50</li>
+                        <li>80/100</li>
+                    </ul>
+                </div>
+                <div class="second-semester">
+                    <ul>
+                        <li>40/50</li>
+                        <li>92/100</li>
+                        <li>43/50</li>
+                        <li>99/100</li>
+                        <li>72/100</li>
+                        <li>19/50</li>
+                        <li>92/100</li>
+                    </ul>
+                </div>
+                <div class="pass-limit">
+                    <ul>
+                        <li>50</li>
+                        <li>100</li>
+                        <li>50</li>
+                        <li>100</li>
+                        <li>100</li>
+                        <li>50</li>
+                        <li>100</li>
+                    </ul>
+                </div>
+                <div class="total-mark">
+                    <ul>
+                        <li>82/100</li>
+                        <li>172/200</li>
+                        <li>93/100</li>
+                        <li>197/200</li>
+                        <li>102/200</li>
+                        <li><span>39</span>/100</li>
+                        <li>172/200</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="section-content total d-flex justify-content-between">
+                <p>Total Mark</p>
+                <p>3785<span>/4000</span>
+                </p>
+            </div>
+            <!--- End section-content-->
+        </div>
+    </div>
+    <!--- End Gradebook -->
+    <!-- Start Footer-->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-center justify-content-md-end">
+                <p>Copyright © 2022 Nagwa All Rights Reserved</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer-->
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
